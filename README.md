@@ -2,7 +2,7 @@
 In this project I analysed a dataset of user interactions with a fictional music streaming service names Sparkify and predicted the user churn with Machine Learning.
 The first part (01_Sparkify_Data_Exploration) takes a look at exploring and understanding the dataset.
 In the second part (02_Sparkify_Feature_Engineering) features are created and in the third part (03_Sparkify_Modelling) several ML models are trained and evaluated.
-The full description of the project can be fount in a blog post on [Medium](Link to article).
+The full description of the project can be fount in a blog post on [Medium](https://medium.com/@franziska.braunschneider/prediction-of-user-churn-machine-learning-on-pyspark-14839799a16f).
 
 ### Table of Content
 1. [Installation](#installation)
@@ -48,7 +48,7 @@ PySpark_Prediction_User_Churn/
 
 ## Results<a name="results"></a>
 
-The findings are described in detail on the blog post on [Medium](Link to article).
+The findings are described in detail on the blog post on [Medium](https://medium.com/@franziska.braunschneider/prediction-of-user-churn-machine-learning-on-pyspark-14839799a16f).
 
 After understanding the Business context and a definition of churn, a smaller subset of the full dataset was explored. Then the Preprocessing steps were described in detail. The dataset was cleaned, churned users were labeled and several feature columns were created. I then proceeded to check the dataset for Multicollinearity and selected the features to train the model on based on the result. Finally the dataframe to model on was created and checked for imbalance. Since the dataset was indeed imbalanced possible risks and measurements were discussed and the chosen steps taken to deal with the topic. The prepared data was then trained on five different classifiers and based on the smaller subset of data the Gradient-boosted Tree Classifier performed the best.
 
