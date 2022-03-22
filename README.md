@@ -34,20 +34,34 @@ PySpark_Prediction_User_Churn/
 │
 ├── README.md
 ├── requirements.txt
-├── Sparkify.ipynb --> jupyter notebook with code for small local data subset
-├── Sparkify.html
-├── Sparkify_aws.ipynb --> jupyter notebook with code for aws cluster
-├── Sparkify_aws.html
-├── img/ --> png's created in jupyter notebook
-├── models/ --> trained ML models
-├── data/ --> input data JSON file
+├── 01_Sparkify_Data_Exploration.ipynb --> jupyter notebook with code for data exploration of small local data subset
+├── 01_Sparkify_Data_Exploration.html
+├── 02_Sparkify_Feature_Engineering.ipynb --> jupyter notebook with code for feature engineering on small local data subset
+├── 02_Sparkify_Feature_Engineering.html
+├── 03_Sparkify_Modelling.ipynb  --> jupyter notebook with code for modelling on small local data subset
+├── 03_Sparkify_Modelling.html
+├── best_models_zip.zip --> best models stored in pickle files, result from 03 Modelling
+├── data/ --> feature dataframe in json format, result from 02 Feature Engineering notebook
 
 ```
 
 
 ## Results<a name="results"></a>
 
+The findings are described in detail on the blog post on [Medium](Link to article).
 
+After understanding the Business context and a definition of churn, a smaller subset of the full dataset was explored. Then the Preprocessing steps were described in detail. The dataset was cleaned, churned users were labeled and several feature columns were created. I then proceeded to check the dataset for Multicollinearity and selected the features to train the model on based on the result. Finally the dataframe to model on was created and checked for imbalance. Since the dataset was indeed imbalanced possible risks and measurements were discussed and the chosen steps taken to deal with the topic. The prepared data was then trained on five different classifiers and based on the smaller subset of data the Gradient-boosted Tree Classifier performed the best.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
+I give credit to Udacity for the dataset.
+
+Feel free to use my code as you please:
+
+Copyright 2022 Franziska Braun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
